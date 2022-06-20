@@ -1,6 +1,6 @@
 'use strict';
 
-const { postsExtendResolver } = require('./graphql/post/post');
+const { postsExtendResolver, randomPostResolver } = require('./graphql/post/post');
 
 module.exports = {
   /**
@@ -12,6 +12,7 @@ module.exports = {
    register({ strapi }) {
     const extensionService = strapi.plugin("graphql").service("extension");
     extensionService.use(postsExtendResolver);
+    extensionService.use(randomPostResolver);
   },
 
   /**
