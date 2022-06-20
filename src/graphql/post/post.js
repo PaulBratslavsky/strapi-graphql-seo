@@ -19,11 +19,7 @@ module.exports = {
                 filters: { slug: args.slug },
               });
 
-              console.log(data, "data");
               const response = toEntityResponse(data.results[0]);
-
-              console.log("##################", response, "##################");
-
               return response;
             },
           },
