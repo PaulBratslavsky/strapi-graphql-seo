@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_my_components_videos",
+  "info": {
+    "displayName": "Video",
+    "icon": "photo-video",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "link": {
+      "type": "string"
+    },
+    "videoID": {
+      "type": "string",
+      "unique": false,
+      "required": false
+    }
+  }
+}

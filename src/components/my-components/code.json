@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_my_components_codes",
+  "info": {
+    "displayName": "Code",
+    "icon": "code",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "src": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "bash",
+        "javascript",
+        "css",
+        "html"
+      ]
+    },
+    "content": {
+      "type": "text"
+    }
+  }
+}

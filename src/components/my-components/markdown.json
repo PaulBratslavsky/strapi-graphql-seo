@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_my_components_markdowns",
+  "info": {
+    "displayName": "Markdown",
+    "icon": "marker"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}
