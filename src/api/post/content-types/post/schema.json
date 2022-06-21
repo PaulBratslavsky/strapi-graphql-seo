@@ -30,7 +30,8 @@
       "components": [
         "my-components.code",
         "my-components.markdown",
-        "my-components.video"
+        "my-components.video",
+        "my-components.image"
       ]
     },
     "description": {
