@@ -53,6 +53,12 @@
       "relation": "manyToMany",
       "target": "api::tag.tag",
       "inversedBy": "posts"
+    },
+    "post_group": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::post-group.post-group",
+      "inversedBy": "posts_in_group"
     }
   }
 }

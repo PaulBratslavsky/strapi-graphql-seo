@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "post_groups",
+  "info": {
+    "singularName": "post-group",
+    "pluralName": "post-groups",
+    "displayName": "Post Group"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "posts_in_group": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post",
+      "mappedBy": "post_group"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
