@@ -1,7 +1,9 @@
 'use strict';
 
 const { postsExtendResolver, randomPostResolver } = require('./graphql/post/post');
+const { authorBioByIdResolver } = require('./graphql/author/author');
 
+console.log( authorBioByIdResolver, "#######################################") 
 module.exports = {
   /**
    * An asynchronous register function that runs before
@@ -13,6 +15,7 @@ module.exports = {
     const extensionService = strapi.plugin("graphql").service("extension");
     extensionService.use(postsExtendResolver);
     extensionService.use(randomPostResolver);
+    extensionService.use(authorBioByIdResolver);
   },
 
   /**

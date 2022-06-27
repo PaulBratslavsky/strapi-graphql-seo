@@ -59,6 +59,12 @@
       "relation": "manyToOne",
       "target": "api::post-group.post-group",
       "inversedBy": "posts_in_group"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "posts"
     }
   }
 }
