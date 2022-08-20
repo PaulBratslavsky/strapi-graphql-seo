@@ -1,22 +1,9 @@
 'use strict';
 
 /**
- *  event controller
+ * event router.
  */
-const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::post.post', ( {strapi}) => ({
-  async findBySlug(ctx) {
-    const { slug } = ctx.params;
+const { createCoreRouter } = require('@strapi/strapi').factories;
 
-    const query = {
-      filters: { slug },
-      ...ctx.query,
-    };
-
-    const post = await strapi.entityService.findMany("api::post.post", query);
-    const sanitizedEntity = await this.sanitizeOutput(post);
-
-    return this.transformResponse(sanitizedEntity[0]);
-  },
-}));
+module.exports = createCoreRouter('api::post.post');
