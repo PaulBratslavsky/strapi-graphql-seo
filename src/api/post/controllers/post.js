@@ -10,12 +10,12 @@ module.exports = createCoreController('api::post.post', ( {strapi}) => ({
     const { slug } = ctx.params;
 
     const query = {
-      filters: { slug },
       ...ctx.query,
+      filters: { slug },
     };
 
     const post = await strapi.entityService.findMany("api::post.post", query);
-    const sanitizedEntity = await this.sanitizeOutput(post);
+    const sanitizedEntity = await this.sanitizeOutput(post, ctx);
 
     return this.transformResponse(sanitizedEntity[0]);
   },
