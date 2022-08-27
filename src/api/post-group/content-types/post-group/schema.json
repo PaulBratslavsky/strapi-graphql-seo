@@ -4,7 +4,8 @@
   "info": {
     "singularName": "post-group",
     "pluralName": "post-groups",
-    "displayName": "Post Group"
+    "displayName": "Post Group",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,6 +23,11 @@
     },
     "description": {
       "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
     }
   }
 }
