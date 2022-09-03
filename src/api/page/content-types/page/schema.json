@@ -40,6 +40,13 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "page_layout": {
+      "type": "dynamiczone",
+      "components": [
+        "my-components.hero-section",
+        "my-components.markdown"
+      ]
     }
   }
 }

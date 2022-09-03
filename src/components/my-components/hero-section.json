@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_my_components_hero_sections",
+  "info": {
+    "displayName": "Hero Section",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "sub_heading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
