@@ -43,6 +43,11 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "author"
+    },
+    "SocialLink": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.social-link"
     }
   }
 }
