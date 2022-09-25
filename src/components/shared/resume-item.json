@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_resume_items",
+  "info": {
+    "displayName": "ResumeItem",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "company": {
+      "type": "string",
+      "required": true
+    },
+    "startDate": {
+      "type": "date",
+      "required": true
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "Task": {
+      "displayName": "JobTask",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.job-task"
+    }
+  }
+}

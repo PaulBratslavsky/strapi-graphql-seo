@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_job_tasks",
+  "info": {
+    "displayName": "JobTask",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -48,6 +48,11 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.social-link"
+    },
+    "ResumeItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.resume-item"
     }
   }
 }
