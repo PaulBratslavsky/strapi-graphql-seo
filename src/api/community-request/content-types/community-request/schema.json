@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "community_requests",
+  "info": {
+    "singularName": "community-request",
+    "pluralName": "community-requests",
+    "displayName": "Community Request",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "note": {
+      "type": "richtext"
+    },
+    "gitHubLink": {
+      "type": "string",
+      "required": true
+    },
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "isMember": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
