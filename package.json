@@ -11,12 +11,12 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.4.1",
-    "@strapi/plugin-users-permissions": "4.4.1",
-    "@strapi/plugin-i18n": "4.4.1",
-    "@strapi/plugin-graphql": "4.4.1",
+    "@strapi/strapi": "4.7.1",
+    "@strapi/plugin-users-permissions": "4.7.1",
+    "@strapi/plugin-i18n": "4.7.1",
+    "@strapi/plugin-graphql": "4.7.1",
     "@strapi/plugin-seo": "^1.7.3",
-    "@strapi/provider-upload-cloudinary": "^4.2.0",
+    "@strapi/provider-upload-cloudinary": "4.7.1",
     "better-sqlite3": "7.4.6",
     "pg": "^8.7.3"
   },
@@ -27,7 +27,7 @@
     "uuid": "f23edcfe-09d3-4870-9f0b-3a9de3c62535"
   },
   "engines": {
-    "node": ">=12.x.x <=16.x.x",
+    "node": ">=12.x.x <=18.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
