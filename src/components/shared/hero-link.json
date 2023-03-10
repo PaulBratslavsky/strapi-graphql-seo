@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_hero_links",
+  "info": {
+    "displayName": "Hero Link"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "newTab": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -44,8 +44,7 @@
     "page_layout": {
       "type": "dynamiczone",
       "components": [
-        "my-components.hero-section",
-        "my-components.markdown"
+        "my-components.hero"
       ]
     }
   }

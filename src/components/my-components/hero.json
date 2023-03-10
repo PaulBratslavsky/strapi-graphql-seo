@@ -1,18 +1,17 @@
 {
-  "collectionName": "components_my_components_hero_sections",
+  "collectionName": "components_my_components_heroes",
   "info": {
-    "displayName": "Hero Section",
-    "icon": "align-justify"
+    "displayName": "Hero"
   },
   "options": {},
   "attributes": {
+    "caption": {
+      "type": "string"
+    },
     "heading": {
       "type": "string"
     },
-    "sub_heading": {
-      "type": "string"
-    },
-    "content": {
+    "subHeading": {
       "type": "text"
     },
     "image": {
@@ -24,6 +23,12 @@
       ],
       "type": "media",
       "multiple": false
+    },
+    "heroLink": {
+      "displayName": "Hero Link",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.hero-link"
     }
   }
 }
