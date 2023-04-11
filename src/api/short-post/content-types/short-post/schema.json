@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "short_posts",
+  "info": {
+    "singularName": "short-post",
+    "pluralName": "short-posts",
+    "displayName": "Short Post"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

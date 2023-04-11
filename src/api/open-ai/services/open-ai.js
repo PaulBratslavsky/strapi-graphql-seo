@@ -24,6 +24,7 @@ module.exports = ({ strapi }) => ({
         console.log(response.data, "response.data")
         return response.data;
       } catch (error) {
+        console.log(error.message, "error")
         throw new ApplicationError("Invalid audio file: Please provide a valid audio file");
       }
     }
