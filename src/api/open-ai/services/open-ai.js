@@ -1,18 +1,10 @@
 const fs = require('fs');
 const { ApplicationError } = require('@strapi/utils').errors;
-const { Configuration, OpenAIApi } = require("openai");
-
-function configureOpenAi(apiKey) {
-  const configuration = new Configuration({
-    apiKey: apiKey,
-  });
-  return new OpenAIApi(configuration);
-}
 
 module.exports = ({ strapi }) => ({
   
   async openAiRequest(payload, type = "completion") {
-    const openai = configureOpenAi(process.env.OPENAI_API_KEY);
+    const openai = strapi.openai;
     const defaultPrompt = `Expand and Transform Following Short Text Samples into Comprehensive Technical Articles. Must include headings, sections, and bullet points. Provide an intro, and a bullet point outline at the beginning discussing topics covered. Paragraphs should be between 5 to 8 sentences and should have 8 to 10 paragraphs. Add additional information and context to fill out the article. Provide code example when necessary.  Minimum length 2500 words. Return post in markdown:`;
 
     async function createTranscription(payload) {
@@ -31,8 +23,6 @@ module.exports = ({ strapi }) => ({
 
     async function createCompletion(payload) {
       console.log('Summarizing transcript...');
-
-      console.log(defaultPrompt, "defaultPrompt")
 
       const response = await openai.createCompletion({
         model: "text-davinci-003",

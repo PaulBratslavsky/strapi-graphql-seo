@@ -38,7 +38,7 @@ module.exports = ({ strapi }) => ({
       const title = getTitle(summary.choices[0].text);
       console.log(title, "title")
 
-      const post = await strapi
+      await strapi
         .entityService.create('api::short-post.short-post', {
           data: {
             title: title.trim(),
